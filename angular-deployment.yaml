@@ -23,5 +23,5 @@ spec:
         image: student9repo.azurecr.io/ng-week5:v1
         ports:
         - containerPort: 4200
-      imagePullsecrets:
+      imagePullSecrets:
       - name: acr-secret
