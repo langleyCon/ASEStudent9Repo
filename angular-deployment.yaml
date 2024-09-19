@@ -9,19 +9,19 @@ spec:
     rollingUpdate:
       maxUnavailable: 1
       maxSurge: 1
-    replicas: 5
-    selector:
-      matchLabeles:
+  replicas: 5
+  selector:
+    matchLabeles:
+      app: angular-frontend
+  template:
+    metadate:
+      labels:
         app: angular-frontend
-    template:
-      metadate:
-        labels:
-          app: angular-frontend
-      spec:
-        containers:
-        - name: angular-frontend
-          image: student9repo.azurecr.io/ng-week5:v1
-          ports:
-          - containerPort: 4200
-        imagePullsecrets:
-        - name: acr-secret
+    spec:
+      containers:
+      - name: angular-frontend
+        image: student9repo.azurecr.io/ng-week5:v1
+        ports:
+        - containerPort: 4200
+      imagePullsecrets:
+      - name: acr-secret
