@@ -4,7 +4,7 @@ metadata:
   name: express-backend
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: express-backend
   ports:
