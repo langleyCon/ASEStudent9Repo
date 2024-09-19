@@ -11,7 +11,7 @@ spec:
       maxSurge: 1
   replicas: 5
   selector:
-    matchLabeles:
+    matchLabels:
       app: angular-frontend
   template:
     metadate:
