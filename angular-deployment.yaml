@@ -14,7 +14,7 @@ spec:
     matchLabels:
       app: angular-frontend
   template:
-    metadate:
+    metadata:
       labels:
         app: angular-frontend
     spec:
